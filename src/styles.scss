@@ -1,0 +1,133 @@
+@mixin base-button {
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    font-size: 1.4rem;
+    padding: 0.005rem 1.9rem;
+    width: fit-content;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+}
+
+@mixin tipo-letra {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.first-button{
+    @include tipo-letra();
+    @include base-button();
+    background-color: white;
+    float: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.titlee{
+    @include tipo-letra();
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.titlee2{
+    @include tipo-letra();
+    font-size: 3rem;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.titlee3{
+    @include tipo-letra();
+    font-size: 2rem;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.text1{
+    @include tipo-letra();
+    color: rgb(225, 176, 176);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text2{
+    @include tipo-letra();
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text3{
+    @include tipo-letra();
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: rgba(27, 27, 27, 0.627);
+}
+
+.text4{
+    @include tipo-letra();
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    width: 90%;
+    padding: 3px;
+    color: rgba(27, 27, 27, 0.627);
+}
+
+.text5{
+    @include tipo-letra();
+    font-size: 1rem;
+    
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    width: auto;
+    height: 5%;
+    margin: 5%;
+    padding: 11%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  } 
+
+
+  .colorbtm{
+    border-color: rgb(255, 255, 255);
+    border-bottom-color:rgb(198, 198, 198);
+    width: fit-content;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: bold;
+  }
+.lg{
+    width: 90%;
+}
+
+.point{
+    border-style: dotted;
+    border-bottom-color: white;
+    border-right-color: white ;
+    border-left-color: blue;
+    border-top-color: blue;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+
+  
